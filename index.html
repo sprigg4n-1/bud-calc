@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Budget calculator | by sprigg4n's</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div id="home" class="header__logo">
+                    Budget Calculator
+                </div>
+
+                <nav class="nav">
+                    <div class="nav__list">
+                        <li class="nav__item">
+                            <a id="home" href="#" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a id="mainCalcNav" href="#" class="nav__link">Our calc</a>
+                        </li>
+                        <li class="nav__item">
+                            <a id="createCalcNav" href="#" class="nav__link">Your calc</a>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__inner">
+                <div class="home">
+                    <div class="home__inner">
+                        <h3 class="home__title">
+                            <span class="left"></span>Choose calculator you want<span class="right"></span>
+                        </h3>
+
+                        <div class="home__choice">
+                            <div class="home__calc">
+                                <h4 class="home__calc-title">
+                                    Use our budget calculator
+                                </h4>
+                                <div class="home__calc-btn-box">
+                                    <span></span>
+                                    <button id="calc-main" class="home__calc-btn">Start</button>
+                                </div>
+                            </div>
+
+                            <div class="home__calc">
+                                <h4 class="home__calc-title">
+                                    Create your uniqe budget calculator
+                                </h4>
+                                <div class="home__calc-btn-box">
+                                    <span></span>
+                                    <button id="calc-create" class="home__calc-btn">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-main moove-right">
+                    <div class="calc-main__inner">
+                        <button id="backMainCalc" class="back-arrow"></button>
+                        <div class="calc-main__title">
+                            The <span>50</span>/<span>30</span>/<span>20</span> budget
+                        </div>
+
+                        <div class="calc-main__income-box">
+                            <span>Monthly after-tax income:</span>
+                            <input class="calc-main__input" type="text">
+                        </div>
+
+                        <ul class="calc-main__list">
+                            <li class="calc-main__item">
+                                <h6 class="calc-main__item-title">NECESSITIES</h6>
+                                <span class="calc-main__item-num">0</span>
+                            </li>
+                            <li class="calc-main__item">
+                                <h6 class="calc-main__item-title">WANTS</h6>
+                                <span class="calc-main__item-num">0</span>
+                            </li>
+                            <li class="calc-main__item">
+                                <h6 class="calc-main__item-title">SAVINGS</h6>
+                                <span class="calc-main__item-num">0</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="create">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

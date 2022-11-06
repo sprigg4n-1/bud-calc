@@ -1,0 +1,23 @@
+.header {
+    background-color: #000;
+    color: #fff;
+}
+
+.header__inner {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.header__logo:hover {
+    opacity: .6;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("components/header.css");
+@import url("components/nav.css");
+@import url("components/home.css");
+@import url("components/calc-main.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    min-height: calc(100vh - 90px);
+    background-color: #404258;
+    color: #F7F7F7;
+    position: relative;
+}
+
+.moove-left {
+    transform: translateX(-250%);
+}
+
+.moove-right {
+    transform: translateX(250%);
+}
