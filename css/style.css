@@ -3,6 +3,7 @@
 @import url("components/nav.css");
 @import url("components/home.css");
 @import url("components/calc-main.css");
+@import url("components/create.css");
 
 *,
 *::before,
