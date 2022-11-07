@@ -1,6 +1,6 @@
 const mainCalcBtn = document.querySelector('#calc-main');
 const homeBody = document.querySelector('.home');
-const backBtnMainCalc = document.querySelector('#backMainCalc');
+const backBtnCalc = document.querySelectorAll('#backCalc');
 const mainCalc = document.querySelector('.calc-main');
 const createCalcBtn = document.querySelector('#calc-create');
 const createBody = document.querySelector('.create');
@@ -15,32 +15,29 @@ const childredMainTitle = calcMainTitle.querySelectorAll('span');
 const calcMainNums = document.querySelectorAll('.calc-main__item-num');
 
 // global action
-
-function mooveLeft() {
+mainCalcBtn.addEventListener('click', () => {
     homeBody.classList.add('moove-left');
     mainCalc.classList.remove('moove-right');
-};
-
-function mooveLeftBack() {
-    homeBody.classList.remove('moove-left');
-    mainCalc.classList.add('moove-right');
-};
-mainCalcBtn.addEventListener('click', () => {
-    mooveLeft();
 });
-backBtnMainCalc.addEventListener('click', () => {
-    mooveLeftBack();
-    homeBody.classList.remove('moove-right');
-});
+backBtnCalc.forEach(item => {
+    item.addEventListener('click', () => {
+        homeBody.classList.remove('moove-left');
+        homeBody.classList.remove('moove-right');
+        createBody.classList.add('moove-left');
+        mainCalc.classList.add('moove-right');
+    });
+})
 homeBtn.forEach(item => {
     item.addEventListener('click', () => {
-        mooveLeftBack();
+        mainCalc.classList.add('moove-right');
         createBody.classList.add('moove-left');
+        homeBody.classList.remove('moove-left');
         homeBody.classList.remove('moove-right');
     })
 });
 mainCalcNav.addEventListener('click', () => {
-    mooveLeft();
+    homeBody.classList.add('moove-left');
+    mainCalc.classList.remove('moove-right');
     createBody.classList.add('moove-left');
 });
 createCalcBtn.addEventListener('click', () => {

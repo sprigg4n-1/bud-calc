@@ -9,4 +9,7 @@
     width: 200px;
     height: 200px;
     background-color: #Fff;
+    position: relative;
+    color: #000;
+    margin-top: -500px;
 }
